@@ -22,10 +22,8 @@ cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         invx <- x$getInv()
         
-        ## Need to check if original matrix has changed to ensure
-        ## inverse is correct
         if (!is.null(invx)) {
-            return(invx)
+                return(invx)
         }
         mx <- x$get()
         invx <- solve(mx)
